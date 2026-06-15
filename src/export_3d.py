@@ -25,7 +25,7 @@ from qgis.core import (
 from qgis.gui import QgsMapCanvas
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output")
+OUTPUT_DIR = PROJECT_ROOT
 PROJECT_PATH = os.path.join(OUTPUT_DIR, "MapaBase_WEB.qgz")
 
 

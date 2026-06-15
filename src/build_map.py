@@ -47,10 +47,8 @@ from qgis.PyQt.QtCore import Qt
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_DIR = os.path.join(PROJECT_ROOT, "input")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output")
+OUTPUT_DIR = PROJECT_ROOT
 PROJECT_PATH = os.path.join(OUTPUT_DIR, "MapaBase_WEB.qgz")
-
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
 def hsv(h, s, v, a=255):
