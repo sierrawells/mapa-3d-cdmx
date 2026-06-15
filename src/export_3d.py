@@ -179,6 +179,13 @@ def exportar_mapa_3d(project, canvas):
         flat_layer.properties.update({"checkBox_Visible": True})
         settings.setLayer(flat_layer)
 
+    # Cámara: vista cenital (sin inclinación en Z) y un poco más cercana
+    # que el encuadre por defecto.
+    settings.setCameraPose(
+        {"x": 0, "y": 0, "z": 80},
+        {"x": 0, "y": 0, "z": 0},
+    )
+
     settings.setOutputFilename(os.path.join(OUTPUT_DIR, "index.html"))
 
     exporter = ThreeJSExporter(settings=settings)
